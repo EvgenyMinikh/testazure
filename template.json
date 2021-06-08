@@ -24,10 +24,10 @@
             "type": "bool"
         },
         "allowBlobPublicAccessArray": {
-            "type": "bool"
+            "type": "array"
         },
         "allowSharedKeyAccess": {
-            "type": "array"
+            "type": "bool"
         },
         "networkAclsBypass": {
             "type": "string"

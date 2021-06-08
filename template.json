@@ -23,11 +23,11 @@
         "supportsHttpsTrafficOnly": {
             "type": "bool"
         },
-        "allowBlobPublicAccess": {
+        "allowBlobPublicAccessArray": {
             "type": "bool"
         },
         "allowSharedKeyAccess": {
-            "type": "bool"
+            "type": "array"
         },
         "networkAclsBypass": {
             "type": "string"
@@ -69,7 +69,7 @@
                 "accessTier": "[parameters('accessTier')]",
                 "minimumTlsVersion": "[parameters('minimumTlsVersion')]",
                 "supportsHttpsTrafficOnly": "[parameters('supportsHttpsTrafficOnly')]",
-                "allowBlobPublicAccess": "[parameters('allowBlobPublicAccess')]",
+                "allowBlobPublicAccess": "[parameters('allowBlobPublicAccessArray')[copyIndex()]]",
                 "allowSharedKeyAccess": "[parameters('allowSharedKeyAccess')]",
                 "networkAcls": {
                     "bypass": "[parameters('networkAclsBypass')]",

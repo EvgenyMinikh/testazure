@@ -23,8 +23,8 @@
         "supportsHttpsTrafficOnly": {
             "value": true
         },
-        "allowBlobPublicAccess": {
-            "value": true
+        "allowBlobPublicAccessArray": {
+            "value": [true, false]
         },
         "allowSharedKeyAccess": {
             "value": true
